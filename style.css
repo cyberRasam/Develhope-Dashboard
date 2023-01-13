@@ -1,0 +1,102 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #edf2f9;
+}
+body nav {
+  padding-top: 0.2rem;
+  display: flex;
+  height: 8.2vh;
+  width: 100vw;
+  align-items: center;
+}
+body nav .burgerImg {
+  margin-left: 11.25%;
+  height: 1.25rem;
+  width: 1.25rem;
+}
+body nav .falconImg {
+  margin-left: 2rem;
+  height: 2.5rem;
+  width: 2.5rem;
+}
+body nav .falconText {
+  font-family: "Poppins", sans-serif;
+  color: #2c7be5;
+  font-weight: 800;
+  font-size: 1.7rem;
+  margin-left: 0.6rem;
+}
+body nav .search {
+  display: flex;
+  align-items: center;
+  border-radius: 50rem;
+  border: 1px solid #d8e2ef;
+  width: 21rem;
+  height: 2.5rem;
+  margin-left: 4rem;
+  font-size: 1rem;
+  box-shadow: none;
+  background-color: white;
+  padding-left: 1rem;
+  box-sizing: border-box;
+}
+body nav .search i {
+  font-size: 0.8rem;
+  color: #b6c1d1;
+}
+body nav .search .searchInput {
+  border-radius: 50rem;
+  border: none;
+  width: 20rem;
+  height: 2rem;
+}
+body nav .search .searchInput::-moz-placeholder {
+  padding-left: 10px;
+  color: #b6c1d1;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+}
+body nav .search .searchInput:-ms-input-placeholder {
+  padding-left: 10px;
+  color: #b6c1d1;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+}
+body nav .search .searchInput::placeholder {
+  padding-left: 10px;
+  color: #b6c1d1;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+}
+body nav .notificationBasketIcon {
+  margin-left: 20rem;
+}
+body nav .notificationBasketIcon .shoppingIcon {
+  position: absolute;
+  margin-left: 1rem;
+  font-size: 1.2rem;
+  color: #6a6d70;
+}
+body nav .notificationBasketIcon .notificationNumber {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 1rem;
+  width: 1rem;
+  font-size: 0.65rem;
+  color: white;
+  font-weight: 700;
+  background-color: #f5803d;
+  border-radius: 100%;
+  font-family: "Poppins", sans-serif;
+  margin-left: 1.6rem;
+  bottom: 8px;
+}/*# sourceMappingURL=style.css.map */
