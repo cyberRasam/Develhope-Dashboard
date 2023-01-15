@@ -44,46 +44,95 @@ body {
       box-sizing: border-box;
       i {
         font-size: 0.8rem;
-        color: colors.$lightblue;
+        color: colors.$light-blue;
+        margin-right: 4px;
       }
       .searchInput {
         border-radius: 50rem;
         border: none;
         width: 20rem;
         height: 2rem;
+        padding-left: 5px;
         &::placeholder {
-          padding-left: 10px;
-          color: colors.$lightblue;
+          color: colors.$light-blue;
           font-family: "Poppins", sans-serif;
           font-weight: 300;
           font-size: 1rem;
         }
       }
     }
-
-    .notificationBasketIcon {
-      margin-left: 20rem;
-      .shoppingIcon {
-        position: absolute;
-        margin-left: 1rem;
-        font-size: 1.2rem;
-        color: colors.$gray;
-      }
-      .notificationNumber {
-        position: relative;
+    .nav-left-icons {
+      margin-left: 22rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.8rem;
+      .moonIcon {
+        // margin-left: 10rem;
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 1rem;
-        width: 1rem;
-        font-size: 0.65rem;
-        color: color.$primary-light-color;
-        font-weight: 700;
-        background-color: color.$orange;
+        background-color: colors.$input-border-color;
+        height: 1.9rem;
+        width: 1.9rem;
         border-radius: 100%;
-        font-family: "Poppins", sans-serif;
-        margin-left: 1.6rem;
-        bottom: 8px;
+        i {
+          color: colors.$blue;
+          font-size: 1.2rem;
+        }
+      }
+      .notificationBasketIcon {
+        // margin-left: 20rem;
+        .shoppingIcon {
+          position: absolute;
+          // margin-left: 1.3rem;
+          font-size: 1.2rem;
+          color: colors.$gray;
+        }
+        .notificationNumber {
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 1rem;
+          width: 1rem;
+          font-size: 0.65rem;
+          color: colors.$primary-light-color;
+          font-weight: 700;
+          background-color: colors.$orange;
+          border-radius: 100%;
+          font-family: "Poppins", sans-serif;
+          margin-left: 0.7rem;
+          bottom: 8px;
+        }
+      }
+      .bellIcon {
+        i {
+          position: absolute;
+          // margin-left: 1.3rem;
+          font-size: 1.2rem;
+          color: colors.$gray;
+        }
+        .blueNotification {
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 0.8rem;
+          width: 0.8rem;
+          border: 2px solid colors.$light-bg-color;
+          background-color: colors.$blue;
+          border-radius: 100%;
+          left: 0.4rem;
+          bottom: 8px;
+        }
+      }
+      .circle-img-nav {
+        img {
+          height: 2rem;
+          width: 2rem;
+          border-radius: 100%;
+        }
       }
     }
   }
