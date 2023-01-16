@@ -1,0 +1,140 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #edf2f9;
+}
+body nav {
+  padding-top: 0.2rem;
+  display: flex;
+  height: 8.2vh;
+  width: 100vw;
+  align-items: center;
+}
+body nav .burgerImg {
+  margin-left: 11.25%;
+  height: 1.25rem;
+  width: 1.25rem;
+}
+body nav .falconImg {
+  margin-left: 2rem;
+  height: 2.5rem;
+  width: 2.5rem;
+}
+body nav .falconText {
+  font-family: "Poppins", sans-serif;
+  color: #2c7be5;
+  font-weight: 800;
+  font-size: 1.7rem;
+  margin-left: 0.6rem;
+}
+body nav .search {
+  display: flex;
+  align-items: center;
+  border-radius: 50rem;
+  border: 1px solid #d8e2ef;
+  width: 21rem;
+  height: 2.5rem;
+  margin-left: 4rem;
+  font-size: 1rem;
+  box-shadow: none;
+  background-color: white;
+  padding-left: 1rem;
+  box-sizing: border-box;
+}
+body nav .search i {
+  font-size: 0.8rem;
+  color: #b6c1d1;
+  margin-right: 4px;
+}
+body nav .search .searchInput {
+  border-radius: 50rem;
+  border: none;
+  width: 20rem;
+  height: 2rem;
+  padding-left: 5px;
+}
+body nav .search .searchInput::-moz-placeholder {
+  color: #b6c1d1;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+}
+body nav .search .searchInput:-ms-input-placeholder {
+  color: #b6c1d1;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+}
+body nav .search .searchInput::placeholder {
+  color: #b6c1d1;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+}
+body nav .nav-left-icons {
+  margin-left: 22rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+}
+body nav .nav-left-icons .moonIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #d8e2ef;
+  height: 1.9rem;
+  width: 1.9rem;
+  border-radius: 100%;
+}
+body nav .nav-left-icons .moonIcon i {
+  color: #2c7be5;
+  font-size: 1.2rem;
+}
+body nav .nav-left-icons .notificationBasketIcon .shoppingIcon {
+  position: absolute;
+  font-size: 1.2rem;
+  color: #6a6d70;
+}
+body nav .nav-left-icons .notificationBasketIcon .notificationNumber {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 1rem;
+  width: 1rem;
+  font-size: 0.65rem;
+  color: white;
+  font-weight: 700;
+  background-color: #f5803d;
+  border-radius: 100%;
+  font-family: "Poppins", sans-serif;
+  margin-left: 0.7rem;
+  bottom: 8px;
+}
+body nav .nav-left-icons .bellIcon i {
+  position: absolute;
+  font-size: 1.2rem;
+  color: #6a6d70;
+}
+body nav .nav-left-icons .bellIcon .blueNotification {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 0.8rem;
+  width: 0.8rem;
+  border: 2px solid #edf2f9;
+  background-color: #2c7be5;
+  border-radius: 100%;
+  left: 0.4rem;
+  bottom: 8px;
+}
+body nav .nav-left-icons .circle-img-nav img {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 100%;
+}/*# sourceMappingURL=style.css.map */
