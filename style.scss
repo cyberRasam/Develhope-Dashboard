@@ -1,0 +1,139 @@
+@use "./colors" as colors;
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: colors.$light-bg-color;
+  nav {
+    padding-top: 0.2rem;
+    display: flex;
+    height: 8.2vh;
+    width: 100vw;
+    align-items: center;
+
+    .burgerImg {
+      margin-left: 11.25%;
+      height: 1.25rem;
+      width: 1.25rem;
+    }
+    .falconImg {
+      margin-left: 2rem;
+      height: 2.5rem;
+      width: 2.5rem;
+    }
+    .falconText {
+      font-family: "Poppins", sans-serif;
+      color: #2c7be5;
+      font-weight: 800;
+      font-size: 1.7rem;
+      margin-left: 0.6rem;
+    }
+    .search {
+      display: flex;
+      align-items: center;
+      border-radius: 50rem;
+      border: 1px solid colors.$input-border-color;
+      width: 21rem;
+      height: 2.5rem;
+      margin-left: 4rem;
+      font-size: 1rem;
+      box-shadow: none;
+      background-color: colors.$primary-light-color;
+      padding-left: 1rem;
+      box-sizing: border-box;
+      i {
+        font-size: 0.8rem;
+        color: colors.$light-blue;
+        margin-right: 4px;
+      }
+      .searchInput {
+        border-radius: 50rem;
+        border: none;
+        width: 20rem;
+        height: 2rem;
+        padding-left: 5px;
+        &::placeholder {
+          color: colors.$light-blue;
+          font-family: "Poppins", sans-serif;
+          font-weight: 300;
+          font-size: 1rem;
+        }
+      }
+    }
+    .nav-left-icons {
+      margin-left: 22rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.8rem;
+      .moonIcon {
+        // margin-left: 10rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: colors.$input-border-color;
+        height: 1.9rem;
+        width: 1.9rem;
+        border-radius: 100%;
+        i {
+          color: colors.$blue;
+          font-size: 1.2rem;
+        }
+      }
+      .notificationBasketIcon {
+        // margin-left: 20rem;
+        .shoppingIcon {
+          position: absolute;
+          // margin-left: 1.3rem;
+          font-size: 1.2rem;
+          color: colors.$gray;
+        }
+        .notificationNumber {
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 1rem;
+          width: 1rem;
+          font-size: 0.65rem;
+          color: colors.$primary-light-color;
+          font-weight: 700;
+          background-color: colors.$orange;
+          border-radius: 100%;
+          font-family: "Poppins", sans-serif;
+          margin-left: 0.7rem;
+          bottom: 8px;
+        }
+      }
+      .bellIcon {
+        i {
+          position: absolute;
+          // margin-left: 1.3rem;
+          font-size: 1.2rem;
+          color: colors.$gray;
+        }
+        .blueNotification {
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 0.8rem;
+          width: 0.8rem;
+          border: 2px solid colors.$light-bg-color;
+          background-color: colors.$blue;
+          border-radius: 100%;
+          left: 0.4rem;
+          bottom: 8px;
+        }
+      }
+      .circle-img-nav {
+        img {
+          height: 2rem;
+          width: 2rem;
+          border-radius: 100%;
+        }
+      }
+    }
+  }
+}
