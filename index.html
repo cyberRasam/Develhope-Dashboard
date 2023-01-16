@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="cards-cotainer.css" />
     <title>Falcon React | ReactJS Dashboard &amp; WebApp Template</title>
     <!---------------poppins font---------------->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -24,10 +25,17 @@
     <!--mahsa's section-->
 
     <nav>
-      <img class="burgerImg" src="/media/IMG_5759.PNG" alt="hamburgerMenu" />
+      <button class="burgerImg">
+        <img
+          class="burgerImg"
+          src="./media/Navbar/IMG_5759.PNG"
+          alt="hamburgerMenu"
+        />
+      </button>
+
       <img
         class="falconImg"
-        src="/media/falcon.920a9ff0.png"
+        src="./media/Navbar/falcon.920a9ff0.png"
         alt="falconIcon"
       />
       <p class="falconText">falcon</p>
@@ -69,33 +77,37 @@
           </svg>
         </div>
         <div class="circle-img-nav">
-          <img src="/media/3.cb95ae1b (1).jpg" alt="avatar" />
+          <img src="./media/Navbar/3.cb95ae1b (1).jpg" alt="avatar" />
         </div>
       </section>
     </nav>
 
     <main>
-      <!--Ali's Cards-->
-      <div class="ali-cards">
-        <div class="ali-card-1"></div>
-        <div class="ali-card-2"></div>
-        <div class="ali-card-3"></div>
-        <div class="ali-card-4"></div>
-      </div>
-      <!-- Gabriel's Cards -->
-      <div class="gabriel-cards">
-        <div class="gabriel-card-1"></div>
-        <div class="gabriel-card-2"></div>
-        <div class="gabriel-card-3"></div>
-        <div class="gabriel-card-4"></div>
-      </div>
-      <!-- Hasan's Cards -->
-      <div class="hasan-cards">
-        <div class="hasan-card-1"></div>
-        <div class="hasan-card-2"></div>
-        <div class="hasan-card-3"></div>
-        <div class="hasan-card-4"></div>
-        <div class="hasan-card-5"></div>
+      <div class="cards-container">
+        <!--Ali's Cards-->
+        <div class="ali-cards">
+          <div class="ali-cards-wrapper">
+            <div class="ali-card-1"></div>
+            <div class="ali-card-2"></div>
+            <div class="ali-card-3"></div>
+            <div class="ali-card-4"></div>
+          </div>
+        </div>
+        <!-- Gabriel's Cards -->
+        <div class="gabriel-cards">
+          <div class="gabriel-card-1"></div>
+          <div class="gabriel-card-2"></div>
+          <div class="gabriel-card-3"></div>
+          <div class="gabriel-card-4"></div>
+        </div>
+        <!-- Hasan's Cards -->
+        <div class="hasan-cards">
+          <div class="hasan-card-1"></div>
+          <div class="hasan-card-2"></div>
+          <div class="hasan-card-3"></div>
+          <div class="hasan-card-4"></div>
+          <div class="hasan-card-5"></div>
+        </div>
       </div>
     </main>
     <footer></footer>
