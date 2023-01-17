@@ -1,0 +1,59 @@
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cards-container {
+  height: 80vh;
+  width: 75vw;
+  background-color: white;
+  padding: 0;
+  margin-top: 2rem;
+}
+
+.cc {
+  box-shadow: 7px 14px 0 rgba(59, 65, 94, 0.1), 0 3px 6px 0 rgba(0, 0, 0, 0.07);
+  background-color: #fff;
+  background-clip: border-box;
+  border: 0 solid #edf2f9;
+  border-radius: 0.375rem;
+}
+
+.ali-cards {
+  background-color: gray;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  width: 100%;
+}
+
+.ali-cards-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.ali-card-1 {
+  height: 6.5rem;
+  width: 24%;
+  margin: 0;
+}
+
+.ali-card-2 {
+  height: 6.5rem;
+  width: 24%;
+  margin: 0;
+}
+
+.ali-card-3 {
+  height: 6.5rem;
+  width: 24%;
+  margin: 0;
+}
+
+.ali-card-4 {
+  height: 6.5rem;
+  width: 24%;
+  margin: 0;
+}/*# sourceMappingURL=cards-cotainer.css.map */

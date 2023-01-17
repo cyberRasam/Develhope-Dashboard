@@ -44,6 +44,10 @@ body nav .search {
   padding-left: 1rem;
   box-sizing: border-box;
 }
+body nav .search :focus {
+  outline: none;
+  border: none;
+}
 body nav .search i {
   font-size: 0.8rem;
   color: #b6c1d1;
