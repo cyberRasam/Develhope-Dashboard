@@ -141,4 +141,23 @@ body nav .nav-left-icons .circle-img-nav img {
   height: 2rem;
   width: 2rem;
   border-radius: 100%;
+}
+body footer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1.5rem;
+}
+body footer span {
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-size: 13px;
+  margin-left: 11.5rem;
+  margin-right: 11.5rem;
+  color: #6a6d70;
+}
+body footer span a {
+  margin-left: 5px;
+  text-decoration: none;
+  color: #2c7be5;
 }/*# sourceMappingURL=style.css.map */
