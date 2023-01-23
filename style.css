@@ -79,29 +79,50 @@ body nav .search .searchInput::placeholder {
   font-size: 1rem;
 }
 body nav .nav-left-icons {
-  margin-left: 22rem;
+  margin-left: 30%;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 0.8rem;
 }
-body nav .nav-left-icons .moonIcon {
+body nav .nav-left-icons .spin-icon {
   display: flex;
-  align-items: center;
   justify-content: center;
-  background-color: #d8e2ef;
-  height: 1.9rem;
-  width: 1.9rem;
-  border-radius: 100%;
+  align-items: center;
 }
-body nav .nav-left-icons .moonIcon i {
-  color: #2c7be5;
-  font-size: 1.2rem;
+body nav .nav-left-icons .spin-icon .spinIcon {
+  -webkit-animation-name: spin;
+          animation-name: spin;
+  -webkit-animation-duration: 1500ms;
+          animation-duration: 1500ms;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+@-webkit-keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 body nav .nav-left-icons .notificationBasketIcon .shoppingIcon {
   position: absolute;
   font-size: 1.2rem;
   color: #6a6d70;
+}
+body nav .nav-left-icons .notificationBasketIcon .shoppingIcon:hover {
+  color: black;
 }
 body nav .nav-left-icons .notificationBasketIcon .notificationNumber {
   position: relative;
@@ -123,6 +144,9 @@ body nav .nav-left-icons .bellIcon i {
   position: absolute;
   font-size: 1.2rem;
   color: #6a6d70;
+}
+body nav .nav-left-icons .bellIcon i:hover {
+  color: #2c7be5;
 }
 body nav .nav-left-icons .bellIcon .blueNotification {
   position: relative;
@@ -149,11 +173,11 @@ body footer {
 }
 body footer span {
   display: flex;
-  font-family: "Poppins", sans-serif;
-  font-weight: 200;
-  font-size: 13px;
-  margin-left: 11.5rem;
-  margin-right: 11.5rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  margin-left: 12.5rem;
+  margin-right: 12.5rem;
   color: #6a6d70;
 }
 body footer span a {

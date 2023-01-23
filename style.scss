@@ -1,10 +1,10 @@
-@use "./colors" as colors;
+@use "./_colors" as *;
 * {
   padding: 0;
   margin: 0;
 }
 body {
-  background-color: colors.$light-bg-color;
+  background-color: $light-bg-color;
   nav {
     padding-top: 0.2rem;
     display: flex;
@@ -24,7 +24,7 @@ body {
     }
     .falconText {
       font-family: "Poppins", sans-serif;
-      color: #2c7be5;
+      color: $blue;
       font-weight: 800;
       font-size: 1.7rem;
       margin-left: 0.6rem;
@@ -33,13 +33,13 @@ body {
       display: flex;
       align-items: center;
       border-radius: 50rem;
-      border: 1px solid colors.$input-border-color;
+      border: 1px solid $input-border-color;
       width: 21rem;
       height: 2.5rem;
       margin-left: 4rem;
       font-size: 1rem;
       box-shadow: none;
-      background-color: colors.$primary-light-color;
+      background-color: $primary-light-color;
       padding-left: 1rem;
       box-sizing: border-box;
       :focus {
@@ -48,7 +48,7 @@ body {
       }
       i {
         font-size: 0.8rem;
-        color: colors.$light-blue;
+        color: $light-blue;
         margin-right: 4px;
       }
       .searchInput {
@@ -58,7 +58,7 @@ body {
         height: 2rem;
         padding-left: 5px;
         &::placeholder {
-          color: colors.$light-blue;
+          color: $light-blue;
           font-family: "Poppins", sans-serif;
           font-weight: 300;
           font-size: 1rem;
@@ -66,23 +66,29 @@ body {
       }
     }
     .nav-left-icons {
-      margin-left: 22rem;
+      margin-left: 30%;
       display: flex;
       align-items: center;
       justify-content: center;
       gap: 0.8rem;
-      .moonIcon {
-        // margin-left: 10rem;
+      .spin-icon {
         display: flex;
-        align-items: center;
         justify-content: center;
-        background-color: colors.$input-border-color;
-        height: 1.9rem;
-        width: 1.9rem;
-        border-radius: 100%;
-        i {
-          color: colors.$blue;
-          font-size: 1.2rem;
+        align-items: center;
+        .spinIcon {
+          animation-name: spin;
+          animation-duration: 1500ms;
+          animation-iteration-count: infinite;
+          animation-timing-function: linear;
+        }
+
+        @keyframes spin {
+          from {
+            transform: rotate(0deg);
+          }
+          to {
+            transform: rotate(360deg);
+          }
         }
       }
       .notificationBasketIcon {
@@ -91,7 +97,10 @@ body {
           position: absolute;
           // margin-left: 1.3rem;
           font-size: 1.2rem;
-          color: colors.$gray;
+          color: $gray;
+          &:hover {
+            color: black;
+          }
         }
         .notificationNumber {
           position: relative;
@@ -101,9 +110,9 @@ body {
           height: 1rem;
           width: 1rem;
           font-size: 0.65rem;
-          color: colors.$primary-light-color;
+          color: $primary-light-color;
           font-weight: 700;
-          background-color: colors.$orange;
+          background-color: $orange;
           border-radius: 100%;
           font-family: "Poppins", sans-serif;
           margin-left: 0.7rem;
@@ -115,7 +124,10 @@ body {
           position: absolute;
           // margin-left: 1.3rem;
           font-size: 1.2rem;
-          color: colors.$gray;
+          color: $gray;
+        }
+        i:hover {
+          color: $blue;
         }
         .blueNotification {
           position: relative;
@@ -124,8 +136,8 @@ body {
           justify-content: center;
           height: 0.8rem;
           width: 0.8rem;
-          border: 2px solid colors.$light-bg-color;
-          background-color: colors.$blue;
+          border: 2px solid $light-bg-color;
+          background-color: $blue;
           border-radius: 100%;
           left: 0.4rem;
           bottom: 8px;
@@ -146,16 +158,16 @@ body {
     padding-top: 1.5rem;
     span {
       display: flex;
-      font-family: "Poppins", sans-serif;
-      font-weight: 200;
-      font-size: 13px;
-      margin-left: 11.5rem;
-      margin-right: 11.5rem;
-      color: colors.$gray;
+      font-family: "Open Sans", sans-serif;
+      font-weight: 300;
+      font-size: 15px;
+      margin-left: 12.5rem;
+      margin-right: 12.5rem;
+      color: $gray;
       a {
         margin-left: 5px;
         text-decoration: none;
-        color: colors.$blue;
+        color: $blue;
       }
     }
   }
