@@ -255,4 +255,12 @@ li {
   height: 2rem;
   width: 2rem;
   border-radius: 100%;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #5e6e82;
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
