@@ -25,28 +25,28 @@ body {
   height: 100vh;
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: center;
 }
 
 .container {
   height: 100%;
   padding: 0;
-  width: 85%;
-  margin: 0 auto;
+  width: 80%;
   display: flex;
-  justify-content: space-between;
-  justify-content: start;
+  justify-content: center;
 }
 
 /*Side bar section starts*/
 .navbar-vertical {
   margin: 2rem 0;
-  margin-left: 3rem;
   display: flex;
   flex-direction: column;
   width: 5%;
   align-items: center;
   height: 100%;
-  position: fixed;
+  position: -webkit-sticky;
+  position: sticky;
 }
 .navbar-vertical .toggle-btn #toggle {
   background-color: transparent;
@@ -101,9 +101,8 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 85%;
+  width: 80%;
   height: 100%;
-  margin: 0 4rem;
 }
 .content .header {
   width: 100%;
@@ -114,8 +113,8 @@ li {
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  position: -webkit-sticky;
   position: sticky;
-  margin-left: 5rem;
 }
 .header-nav .nav-left {
   display: flex;
@@ -174,6 +173,18 @@ li {
   height: 2rem;
   padding-left: 5px;
 }
+.header-nav .search .searchInput::-moz-placeholder {
+  color: #b6c1d1;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+}
+.header-nav .search .searchInput:-ms-input-placeholder {
+  color: #b6c1d1;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+}
 .header-nav .search .searchInput::placeholder {
   color: #b6c1d1;
   font-family: "Poppins", sans-serif;
@@ -192,10 +203,22 @@ li {
   align-items: center;
 }
 .header-nav .nav-right .spin-icon .spinIcon {
-  animation-name: spin;
-  animation-duration: 1500ms;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
+  -webkit-animation-name: spin;
+          animation-name: spin;
+  -webkit-animation-duration: 1500ms;
+          animation-duration: 1500ms;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+@-webkit-keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 @keyframes spin {
   from {
@@ -296,7 +319,6 @@ footer span a {
 
 .hasan-cards {
   width: 100%;
-  margin-left: 6rem;
 }
 
 .h-container-1 {
@@ -319,6 +341,4 @@ footer span a {
   background-color: #fff;
   width: 33%;
   height: 100%;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
