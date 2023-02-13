@@ -36,8 +36,8 @@ body {
 
 .container {
   height: 100%;
-  padding: 0;
-  width: 80%;
+  padding: 0 0.5rem 0 0;
+  width: 90%;
   display: flex;
   justify-content: center;
 }
@@ -308,8 +308,8 @@ footer {
 
 //Cards section
 
-//cc is the class for every card's style 
-.cc{
+//cc is the class for every card's style
+.cc {
   background-color: #fff;
   background-clip: border-box;
   border: 0 solid #edf2f9;
@@ -319,28 +319,80 @@ footer {
   box-shadow: 0 7px 14px 0 rgb(59 65 94 / 10%), 0 3px 6px 0 rgb(0 0 0 / 7%);
 }
 
+//Ali's cards
 
-//Ali's cards 
-  @for $i from 1 through 4 {
-    .ali-card-#{$i} {
-      display: flex;
-      
-    }
-  }
+.ali-cards {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
 
-
-  //Gabriel's Cards
-  .g-container1 {
+@for $i from 1 through 4 {
+  .ali-card-#{$i} {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    .fr1 {
-      display: flex;
-      flex-direction: column;
-      width: 50%;
-    }
+    flex-direction: column;
+    width: 24%;
+    height: 151px;
   }
+}
 
+.card-header {
+  height: 20%;
+}
+
+.ali-card-main {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ali-1-card-echart {
+  min-height: 110px;
+  min-width: 175px;
+  margin-right: 1rem;
+}
+
+//Gabriel's Cards
+
+.gabriel-cards {
+  width: 100%;
+}
+.g-container1 {
+  display: flex;
+  width: 100%;
+  .fr1 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+}
+
+.gabriel-card-1 {
+  width: 50%;
+}
+.gabriel-card-2 {
+  width: 50%;
+}
+.header-G {
+  display: flex;
+  height: 20%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.g-container2 {
+  display: flex;
+  width: 100%;
+  .gabriel-card-3 {
+    width: 70%;
+  }
+  .gabriel-card-4 {
+    width: 30%;
+  }
+}
+
+//Hasan's cards
 
 .hasan-cards {
   width: 100%;
@@ -354,18 +406,17 @@ footer {
   width: 100%;
   height: 55vh;
   color: gray;
-  border: 1px solid red;
+  // border: 1px solid red;
   .hasan-card-1 {
-    border: 1px solid green;
-    background-color: #fff;
+    // border: 1px solid green;
+    //background-color: #fff;
     width: 65%;
     height: 100%;
   }
   .hasan-card-2 {
-    border: 1px solid black;
-    background-color: #fff;
+    // border: 1px solid black;
+    // background-color: #fff;
     width: 33%;
     height: 100%;
   }
 }
-
