@@ -31,8 +31,8 @@ body {
 
 .container {
   height: 100%;
-  padding: 0;
-  width: 80%;
+  padding: 0 0.5rem 0 0;
+  width: 90%;
   display: flex;
   justify-content: center;
 }
@@ -45,7 +45,6 @@ body {
   width: 5%;
   align-items: center;
   height: 100%;
-  position: -webkit-sticky;
   position: sticky;
 }
 .navbar-vertical .toggle-btn #toggle {
@@ -113,7 +112,6 @@ li {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  position: -webkit-sticky;
   position: sticky;
 }
 .header-nav .nav-left {
@@ -179,12 +177,6 @@ li {
   font-weight: 300;
   font-size: 1rem;
 }
-.header-nav .search .searchInput:-ms-input-placeholder {
-  color: #b6c1d1;
-  font-family: "Poppins", sans-serif;
-  font-weight: 300;
-  font-size: 1rem;
-}
 .header-nav .search .searchInput::placeholder {
   color: #b6c1d1;
   font-family: "Poppins", sans-serif;
@@ -203,22 +195,10 @@ li {
   align-items: center;
 }
 .header-nav .nav-right .spin-icon .spinIcon {
-  -webkit-animation-name: spin;
-          animation-name: spin;
-  -webkit-animation-duration: 1500ms;
-          animation-duration: 1500ms;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-}
-@-webkit-keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  animation-name: spin;
+  animation-duration: 1500ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 @keyframes spin {
   from {
@@ -309,31 +289,95 @@ footer span a {
   box-shadow: 0 7px 14px 0 rgba(59, 65, 94, 0.1), 0 3px 6px 0 rgba(0, 0, 0, 0.07);
 }
 
+.ali-cards {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
 .ali-card-1 {
   display: flex;
+  flex-direction: column;
+  width: 24%;
+  height: 151px;
 }
 
 .ali-card-2 {
   display: flex;
+  flex-direction: column;
+  width: 24%;
+  height: 151px;
 }
 
 .ali-card-3 {
   display: flex;
+  flex-direction: column;
+  width: 24%;
+  height: 151px;
 }
 
 .ali-card-4 {
   display: flex;
+  flex-direction: column;
+  width: 24%;
+  height: 151px;
+}
+
+.card-header {
+  height: 20%;
+}
+
+.ali-card-main {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ali-1-card-echart {
+  min-height: 110px;
+  min-width: 175px;
+  margin-right: 1rem;
+}
+
+.gabriel-cards {
+  width: 100%;
 }
 
 .g-container1 {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  width: 100%;
 }
 .g-container1 .fr1 {
   display: flex;
   flex-direction: column;
   width: 50%;
+}
+
+.gabriel-card-1 {
+  width: 50%;
+}
+
+.gabriel-card-2 {
+  width: 50%;
+}
+
+.header-G {
+  display: flex;
+  height: 20%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.g-container2 {
+  display: flex;
+  width: 100%;
+}
+.g-container2 .gabriel-card-3 {
+  width: 70%;
+}
+.g-container2 .gabriel-card-4 {
+  width: 30%;
 }
 
 .hasan-cards {
@@ -347,17 +391,12 @@ footer span a {
   width: 100%;
   height: 55vh;
   color: gray;
-  border: 1px solid red;
 }
 .h-container-1 .hasan-card-1 {
-  border: 1px solid green;
-  background-color: #fff;
   width: 65%;
   height: 100%;
 }
 .h-container-1 .hasan-card-2 {
-  border: 1px solid black;
-  background-color: #fff;
   width: 33%;
   height: 100%;
 }/*# sourceMappingURL=style.css.map */
