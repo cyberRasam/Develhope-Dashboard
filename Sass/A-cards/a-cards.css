@@ -1,0 +1,50 @@
+.ali-cards {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.ali-card-1 {
+  display: flex;
+  flex-direction: column;
+  width: 24%;
+  height: 151px;
+}
+
+.ali-card-2 {
+  display: flex;
+  flex-direction: column;
+  width: 24%;
+  height: 151px;
+}
+
+.ali-card-3 {
+  display: flex;
+  flex-direction: column;
+  width: 24%;
+  height: 151px;
+}
+
+.ali-card-4 {
+  display: flex;
+  flex-direction: column;
+  width: 24%;
+  height: 151px;
+}
+
+.card-header {
+  height: 20%;
+}
+
+.ali-card-main {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ali-1-card-echart {
+  min-height: 110px;
+  min-width: 175px;
+  margin-right: 1rem;
+}/*# sourceMappingURL=a-cards.css.map */
