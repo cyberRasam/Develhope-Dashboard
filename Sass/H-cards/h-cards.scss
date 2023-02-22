@@ -1,72 +1,83 @@
 .hasan-cards {
   width: 100%;
-  //margin-left: 6rem;
+  display: flex;
+  flex-direction: column;
 }
 
-.h-container-1 {
+.h-container-1{
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  height: 55vh;
-  color: gray;
-  // border: 1px solid red;
-  .hasan-card-1 {
-    // border: 1px solid green;
-    //background-color: #fff;
-    width: 65%;
-    height: 100%;
+  .hasan-card-1{
+    flex-grow: 3;
     display: flex;
     flex-direction: column;
-    .h-card1-table {
-      height: 90%;
-      width: 100%;
-      .h-table {
-        height: 100%;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        tr {
-          display: flex;
+    margin: 0;
+    padding: 0;
+    .h-card-1-table{
+        .table{
+          table-layout: auto;
           width: 100%;
-          max-height: 15%;
+          margin: 0;
+          border-collapse: collapse;
+          thead{
+            background-color: #f9fafd;
+          }
+          th{
+            padding: 1rem;
+            margin: 0;
+          }
+          th:first-child{
+            width: 45%;
+          }
+          th:nth-child(2){
+            text-align: right;
+            width: 30%;
+          }
+          th:last-child{
+            text-align: right;
+            width: 25%;
+          }
         }
-      }
+    }
+    .h-card-1-bottom{
+
     }
   }
-  .hasan-card-2 {
-    // border: 1px solid black;
-    // background-color: #fff;
-    width: 33%;
-    height: 100%;
+  .hasan-card-2{
+    flex-grow: 1;
   }
 }
 
-.h-container-2 {
+.h-container-2{
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  height: 55vh;
-  color: gray;
-  // border: 1px solid red;
-  .hasan-card-3 {
-    // border: 1px solid green;
-    //background-color: #fff;
-    width: 65%;
-    height: 100%;
+  .hasan-card-3{
+    flex: 1 0 20%;
+    order: 0;
   }
-  .hasan-card-4 {
-    // border: 1px solid black;
-    // background-color: #fff;
-    width: 33%;
-    height: 100%;
+  .hasan-card-4{
+    flex: 1 0 20%;
+    order: 2;
   }
+  .hasan-card-5{
+    flex: 3 0 auto;
+    order: 1;
+  }
+}
 
-  .hasan-card-5 {
-    // border: 1px solid black;
-    // background-color: #fff;
-    width: 33%;
-    height: 100%;
+@media screen and (max-width: 1600px) {
+  .h-container-2{
+    .hasan-card-3{
+      flex: 1 0 auto;
+      order: 0;
+    }
+    .hasan-card-4{
+      flex: 1 0 auto;
+      order: 0;
+    }
+    .hasan-card-5{
+      flex: 3 0 100%;
+      order: 2;
+    }
   }
 }
