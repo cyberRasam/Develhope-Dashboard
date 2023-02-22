@@ -1,58 +1,78 @@
 .hasan-cards {
   width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .h-container-1 {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  height: 55vh;
-  color: gray;
 }
 .h-container-1 .hasan-card-1 {
-  width: 65%;
-  height: 100%;
+  flex-grow: 3;
   display: flex;
   flex-direction: column;
+  margin: 0;
+  padding: 0;
 }
-.h-container-1 .hasan-card-1 .h-card1-table {
-  height: 90%;
+.h-container-1 .hasan-card-1 .h-card-1-table .table {
+  table-layout: auto;
   width: 100%;
+  margin: 0;
+  border-collapse: collapse;
 }
-.h-container-1 .hasan-card-1 .h-card1-table .h-table {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
+.h-container-1 .hasan-card-1 .h-card-1-table .table thead {
+  background-color: #f9fafd;
 }
-.h-container-1 .hasan-card-1 .h-card1-table .h-table tr {
-  display: flex;
-  width: 100%;
-  max-height: 15%;
+.h-container-1 .hasan-card-1 .h-card-1-table .table th {
+  padding: 1rem;
+  margin: 0;
+}
+.h-container-1 .hasan-card-1 .h-card-1-table .table th:first-child {
+  width: 45%;
+}
+.h-container-1 .hasan-card-1 .h-card-1-table .table th:nth-child(2) {
+  text-align: right;
+  width: 30%;
+}
+.h-container-1 .hasan-card-1 .h-card-1-table .table th:last-child {
+  text-align: right;
+  width: 25%;
 }
 .h-container-1 .hasan-card-2 {
-  width: 33%;
-  height: 100%;
+  flex-grow: 1;
 }
 
 .h-container-2 {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  height: 55vh;
-  color: gray;
 }
 .h-container-2 .hasan-card-3 {
-  width: 65%;
-  height: 100%;
+  flex: 1 0 20%;
+  order: 0;
 }
 .h-container-2 .hasan-card-4 {
-  width: 33%;
-  height: 100%;
+  flex: 1 0 20%;
+  order: 2;
 }
 .h-container-2 .hasan-card-5 {
-  width: 33%;
-  height: 100%;
-}/*# sourceMappingURL=h-cards.css.map */
+  flex: 3 0 auto;
+  order: 1;
+}
+
+@media screen and (max-width: 1600px) {
+  .h-container-2 .hasan-card-3 {
+    flex: 1 0 auto;
+    order: 0;
+  }
+  .h-container-2 .hasan-card-4 {
+    flex: 1 0 auto;
+    order: 0;
+  }
+  .h-container-2 .hasan-card-5 {
+    flex: 3 0 100%;
+    order: 2;
+  }
+}
+
+/*# sourceMappingURL=h-cards.css.map */
