@@ -463,62 +463,272 @@
           </div>
         </nav>
         <div class="content">
-          <div class="header">
-            <!--Mahsa's section-->
-            <nav class="header-nav">
-              <section class="nav-left">
-                <div class="logo">
-                  <img
-                  class="falconImg"
-                  src="./media/favicon.ico"
-                  alt="falconIcon"
-                  />
-                  <p class="falconText">falcon</p>
+          <nav class="navbar-glass fs--1 font-weight-semi-bold row navbar-top sticky-kit navbar navbar-light">
+            <div class="toggle-icon-wrapper mr-md-3 mr-2 d-xl-none">
+                <button class="navbar-toggler-humburger-icon btn btn-link d-flex flex-center" id="burgerMenu">
+                    <span class="navbar-toggle-icon">
+                        <span class="toggle-line"></span>
+                    </span>
+                </button>
+            </div>
+            <a class="text-decoration-none navbar-brand text-left" id="topLogo" href="/">
+                <div class="d-flex align-items-center">
+                    <img class="mr-2" src="/static/media/falcon.920a9ff0.png" alt="Logo" width="40">
+                    <span class="text-sans-serif">falcon</span>
                 </div>
-              <div class="search">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <input type="search" class="searchInput" placeholder="Search..." />
-              </div>
-            </section>
-              <section class="nav-right">
-                <!-- This has to change to setting icon -->
-                <div class="spin-icon">
-                  <span class="ripple"></span>
-                    <svg
-                      class="spinIcon"
-                      width="20"
-                      height="20"
-                      viewBox="0 0 20 20"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                    <path
-                      d="M19.7369 12.3941L19.1989 12.1065C18.4459 11.7041 18.0843 10.8487 18.0843 9.99495C18.0843 9.14118 18.4459 8.28582 19.1989 7.88336L19.7369 7.59581C19.9474 7.47484 20.0316 7.23291 19.9474 7.03131C19.4842 5.57973 18.6843 4.28943 17.6738 3.20075C17.5053 3.03946 17.2527 2.99914 17.0422 3.12011L16.393 3.46714C15.6883 3.84379 14.8377 3.74529 14.1476 3.3427C14.0988 3.31422 14.0496 3.28621 14.0002 3.25868C13.2568 2.84453 12.7055 2.10629 12.7055 1.25525V0.70081C12.7055 0.499202 12.5371 0.297594 12.2845 0.257272C10.7266 -0.105622 9.16879 -0.0653007 7.69516 0.257272C7.44254 0.297594 7.31623 0.499202 7.31623 0.70081V1.23474C7.31623 2.09575 6.74999 2.8362 5.99824 3.25599C5.95774 3.27861 5.91747 3.30159 5.87744 3.32493C5.15643 3.74527 4.26453 3.85902 3.53534 3.45302L2.93743 3.12011C2.72691 2.99914 2.47429 3.03946 2.30587 3.20075C1.29538 4.28943 0.495411 5.57973 0.0322686 7.03131C-0.051939 7.23291 0.0322686 7.47484 0.242788 7.59581L0.784376 7.8853C1.54166 8.29007 1.92694 9.13627 1.92694 9.99495C1.92694 10.8536 1.54166 11.6998 0.784375 12.1046L0.242788 12.3941C0.0322686 12.515 -0.051939 12.757 0.0322686 12.9586C0.495411 14.4102 1.29538 15.7005 2.30587 16.7891C2.47429 16.9504 2.72691 16.9907 2.93743 16.8698L3.58669 16.5227C4.29133 16.1461 5.14131 16.2457 5.8331 16.6455C5.88713 16.6767 5.94159 16.7074 5.99648 16.7375C6.75162 17.1511 7.31623 17.8941 7.31623 18.7552V19.2891C7.31623 19.4425 7.41373 19.5959 7.55309 19.696C7.64066 19.7589 7.74815 19.7843 7.85406 19.8046C9.35884 20.0925 10.8609 20.0456 12.2845 19.7729C12.5371 19.6923 12.7055 19.4907 12.7055 19.2891V18.7346C12.7055 17.8836 13.2568 17.1454 14.0002 16.7312C14.0496 16.7037 14.0988 16.6757 14.1476 16.6472C14.8377 16.2446 15.6883 16.1461 16.393 16.5227L17.0422 16.8698C17.2527 16.9907 17.5053 16.9504 17.6738 16.7891C18.7264 15.7005 19.4842 14.4102 19.9895 12.9586C20.0316 12.757 19.9474 12.515 19.7369 12.3941ZM10.0109 13.2005C8.1162 13.2005 6.64257 11.7893 6.64257 9.97478C6.64257 8.20063 8.1162 6.74905 10.0109 6.74905C11.8634 6.74905 13.3792 8.20063 13.3792 9.97478C13.3792 11.7893 11.8634 13.2005 10.0109 13.2005Z"
-                      fill="#2A7BE4"
-                    >
-                    </path>
-                  </svg>
-                </div>
-                
-                <div class="notificationBasketIcon">
-                  <span class="shoppingIcon">
-                    <i class="fa-sharp fa-solid fa-cart-shopping"></i>
-                  </span>
-                  <span class="notificationNumber">9</span>
-                </div>
-                <div class="bellIcon">
-                  <i class="fa-solid fa-bell"></i>
-                  <span class="blueNotification"></span>
-                </div>
-
-
-                <div class="circle-img-nav">
-                  <img src="./media/Navbar/3.cb95ae1b (1).jpg" alt="avatar" />
-                </div>
-              </section>
-            </nav>
-            <!--Mahsa's section-->
-          </div>         
+            </a>
+            <ul class="align-items-center d-none d-lg-block navbar-nav">
+                <li class="nav-item">
+                    <div class="search-box dropdown">
+                        <div data-toggle="dropdown" aria-expanded="false" aria-haspopup="true" class="">
+                            <form class="">
+                                <input placeholder="Search..." aria-label="Search" type="search" class="rounded-pill search-input form-control" value="">
+                                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16 position-absolute text-400 search-box-icon" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path>
+                                </svg>
+                            </form>
+                        </div>
+                        <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu">
+                            <div class="scrollbar py-3" style="max-height: 24rem;">
+                                <h6 tabindex="-1" class="px-card pt-0 pb-2 dropdown-header">Recently Browsed </h6>
+                                <a tabindex="0" role="menuitem" class="fs--1 px-card py-1 hover-primary text-base dropdown-item" href="/pages/events">
+                                    <div class="d-flex align-items-center">
+                                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="circle" class="svg-inline--fa fa-circle fa-w-16 mr-2 text-300 fs--2" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"></path>
+                                        </svg>
+                                        <div class="font-weight-normal">Pages 
+                                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right" class="svg-inline--fa fa-chevron-right fa-w-10 mx-1 text-500 fs--2" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                                <path fill="currentColor" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path>
+                                            </svg> Events
+                                        </div>
+                                    </div>
+                                </a>
+                                <a tabindex="0" role="menuitem" class="fs--1 px-card py-1 hover-primary text-base dropdown-item" href="/e-commerce/customers">
+                                    <div class="d-flex align-items-center">
+                                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="circle" class="svg-inline--fa fa-circle fa-w-16 mr-2 text-300 fs--2" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"></path>
+                                        </svg>
+                                        <div class="font-weight-normal">E-commerce 
+                                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right" class="svg-inline--fa fa-chevron-right fa-w-10 mx-1 text-500 fs--2" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                                <path fill="currentColor" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path>
+                                            </svg> Customers
+                                        </div>
+                                    </div>
+                                </a>
+                                <hr class="border-200">
+                                <h6 tabindex="-1" class="px-card pt-0 pb-2 dropdown-header">Suggested Filter</h6>
+                                <a tabindex="0" role="menuitem" class=" px-card py-1 fs-0 dropdown-item" href="/e-commerce/customers">
+                                    <div class="d-flex align-items-center">
+                                        <span class="font-weight-medium text-decoration-none mr-2 badge badge-soft-warning">customers: </span>
+                                        <div class="flex-1 fs--1">All customers list</div>
+                                    </div>
+                                </a>
+                                <a tabindex="0" role="menuitem" class=" px-card py-1 fs-0 dropdown-item" href="/pages/events">
+                                    <div class="d-flex align-items-center">
+                                        <span class="font-weight-medium text-decoration-none mr-2 badge badge-soft-success">events: </span>
+                                        <div class="flex-1 fs--1">Latest events in current month</div>
+                                    </div>
+                                </a>
+                                <a tabindex="0" role="menuitem" class=" px-card py-1 fs-0 dropdown-item" href="/e-commerce/products/grid">
+                                    <div class="d-flex align-items-center">
+                                        <span class="font-weight-medium text-decoration-none mr-2 badge badge-soft-info">products: </span>
+                                        <div class="flex-1 fs--1">Most popular products</div>
+                                    </div>
+                                </a>
+                                <hr class="border-200">
+                                <h6 tabindex="-1" class="px-card pt-0 pb-2 dropdown-header">Files</h6>
+                                <a tabindex="0" role="menuitem" class="px-card py-2 dropdown-item" href="/dashboard-alt#!">
+                                    <div class="align-item-center media">
+                                        <div class="file-thumbnail">
+                                            <img src="data:image/png;base64,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" alt="" class="border h-100 w-100 fit-cover rounded-lg"></div>
+                                            <div class="ml-2 media-body">
+                                                <h6 class="mb-0">iPhone</h6>
+                                                <p class="fs--2 mb-0">
+                                                    <span class="font-weight-semi-bold">Antony</span>
+                                                    <span class="font-weight-medium text-600 ml-2">27 Sep at 10:30 AM</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a tabindex="0" role="menuitem" class="px-card py-2 dropdown-item" href="/dashboard-alt#!">
+                                        <div class="align-item-center media">
+                                            <div class="file-thumbnail">
+                                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAMAAAD04JH5AAAAkFBMVEUAAAAse+X4+v5rou1knuzg6/uCsfBWleo6hOe50/dDiegxf+bk7vwtfOXz9/5IjenV5fqryvVbmOtfm+zJ3fm91vdooOxPken9/v/u9f2dwfNBiOjc6vva6PqZv/OOufGHtPGAsO9zqO76/P7o8fw4g+ehxPTD2fh+ru93q+5Rkuqyz/aUvfLR4/mLt/GnyfSCtHegAAAAAXRSTlMAQObYZgAAAzpJREFUeNrtm+1yojAUQO9FK1hAUVSkKiJgXT9q3//tNiTtRqG2lavJzJrzT2cYDoQjUQlcwkuGMx+vZ+bBLbBSFxuy6wGdwsbmTKb047eRwh+g0kFOv33GDj8Ztr9kiB+8Ao0nPv7hAs7p/hN4urAdfuCPgcSB79+CxgLoBkDBLg9iDs0E2g49xjUiRtBQoDNyqTHmvCWoMX9h8AtttVwuk0sCsPeJMVrIaF0ORPB8UQAOIkZ9ArAVMeoTyEMRozYBiPs8xrfbCoxsBo9sHATB4jsBmFNiFAKNMwSOiDHqaROAvbwz6hGAZSVGusDYYfAzG/QYPwlAJmLUUYHAGooYdQnIGLUJwHwtYtQhUI+RLhCPGK3PKVn2GwEYyBiVZig5ihj1CUxbIkZdAjJGbQIQP4sYyQI/T8m8r4d7IWO8X4ZywxBqbHwxTb27AMzK0Q6gxruM8b4CK2REMdRIsaRzd4GAn+v+ZgrQIEbylIxPhzmOXSXi7/vWfTKU9CL8lrsLQGFrFgDr6BIECFMySfE6iZw6blWAXsF1tIzAfyBQdBlt/qmeZVmHKEDP0Ag8oIA3YITIyFar1fIBMzQC2gU2fQaf4488xgNmaAS0XwPaKzAC2gW03w21Z2gEtAuIi1CPgKRjBB5bYNrdOsgYDnpaBLp9+bTQ+1S5gLXFUyaxYoG8hef0C7UCHRS4zw4KdpZKgY2PJe1NDlC8CIeOSgGbH/0ABLF4QiFQJzDCkn3ln6CWOoGUT4RA4rnlKegpE9ghYw4n/EFGV5nAuuwOThkjI1ElYNWfbZrzDlQJ5H6ZIJyyQEaqbAic2hB0lQ2B/Bg4y36r9iI8VN9blIPiKslQ7g9fK/9OtUGJgNzeT6bA8WwseVMoMHexxN7HkAdH8SJTejve4weuj4Kop1QAXvzKhORJ9ZxwvMYT2rH6SWksHziPxnq+F1jjtDUMt8kCQIuAxAgYASNgBIyAETACRsAIGAEjQBBottiNzgQZOWG5H5UIER3CgkcqC2TYhCWfBORPu4erFr0OA7gZAd+/68EvSSvLfomEfeSkpIXPdGyLsvSbjl0QFr/TcY8WXIeXhDMfb4I/CxMPLvAXi0c63okhC7MAAAAASUVORK5CYII=" alt="" class="img-fluid">
+                                            </div>
+                                            <div class="ml-2 media-body">
+                                                <h6 class="mb-0">Falcon v1.8.2</h6>
+                                                <p class="fs--2 mb-0">
+                                                    <span class="font-weight-semi-bold">John</span><span class="font-weight-medium text-600 ml-2">30 Sep at 12:30 PM</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <hr class="border-200">
+                                    <h6 tabindex="-1" class="px-card pt-0 pb-2 dropdown-header">Members</h6>
+                                    <a tabindex="0" role="menuitem" class="px-card py-2 dropdown-item" href="/pages/profile">
+                                        <div class="align-item-center media">
+                                            <div class="avatar avatar-l status-online">
+                                                <img class="rounded-circle " src="/static/media/1.38f0341f.jpg" alt=""></div>
+                                                <div class="ml-2 media-body">
+                                                    <h6 class="mb-0">Anna Karinina</h6>
+                                                    <p class="fs--2 mb-0">Technext Limited</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a tabindex="0" role="menuitem" class="px-card py-2 dropdown-item" href="/pages/profile">
+                                            <div class="align-item-center media">
+                                                <div class="avatar avatar-l ">
+                                                    <img class="rounded-circle " src="/static/media/2.62aa9abd.jpg" alt=""></div>
+                                                    <div class="ml-2 media-body">
+                                                        <h6 class="mb-0">Antony Hopkins</h6>
+                                                        <p class="fs--2 mb-0">Brain Trust</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a tabindex="0" role="menuitem" class="px-card py-2 dropdown-item" href="/pages/profile">
+                                                <div class="align-item-center media">
+                                                    <div class="avatar avatar-l ">
+                                                        <img class="rounded-circle " src="/static/media/3.cb95ae1b.jpg" alt=""></div>
+                                                        <div class="ml-2 media-body">
+                                                            <h6 class="mb-0">Emma Watson</h6>
+                                                            <p class="fs--2 mb-0">Google</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                         </div>
+                    </div>
+               </li>
+            </ul>
+            <ul class="navbar-nav-icons ml-auto flex-row align-items-center navbar-nav">
+                                <li class="nav-item">
+                                    <div class="settings-popover nav-link cursor-pointer">
+                                        <span class="ripple"></span>
+                                        <span class="fa-spin position-absolute a-0 d-flex flex-center">
+                                            <span class="icon-spin position-absolute a-0 d-flex flex-center">
+                                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M19.7369 12.3941L19.1989 12.1065C18.4459 11.7041 18.0843 10.8487 18.0843 9.99495C18.0843 9.14118 18.4459 8.28582 19.1989 7.88336L19.7369 7.59581C19.9474 7.47484 20.0316 7.23291 19.9474 7.03131C19.4842 5.57973 18.6843 4.28943 17.6738 3.20075C17.5053 3.03946 17.2527 2.99914 17.0422 3.12011L16.393 3.46714C15.6883 3.84379 14.8377 3.74529 14.1476 3.3427C14.0988 3.31422 14.0496 3.28621 14.0002 3.25868C13.2568 2.84453 12.7055 2.10629 12.7055 1.25525V0.70081C12.7055 0.499202 12.5371 0.297594 12.2845 0.257272C10.7266 -0.105622 9.16879 -0.0653007 7.69516 0.257272C7.44254 0.297594 7.31623 0.499202 7.31623 0.70081V1.23474C7.31623 2.09575 6.74999 2.8362 5.99824 3.25599C5.95774 3.27861 5.91747 3.30159 5.87744 3.32493C5.15643 3.74527 4.26453 3.85902 3.53534 3.45302L2.93743 3.12011C2.72691 2.99914 2.47429 3.03946 2.30587 3.20075C1.29538 4.28943 0.495411 5.57973 0.0322686 7.03131C-0.051939 7.23291 0.0322686 7.47484 0.242788 7.59581L0.784376 7.8853C1.54166 8.29007 1.92694 9.13627 1.92694 9.99495C1.92694 10.8536 1.54166 11.6998 0.784375 12.1046L0.242788 12.3941C0.0322686 12.515 -0.051939 12.757 0.0322686 12.9586C0.495411 14.4102 1.29538 15.7005 2.30587 16.7891C2.47429 16.9504 2.72691 16.9907 2.93743 16.8698L3.58669 16.5227C4.29133 16.1461 5.14131 16.2457 5.8331 16.6455C5.88713 16.6767 5.94159 16.7074 5.99648 16.7375C6.75162 17.1511 7.31623 17.8941 7.31623 18.7552V19.2891C7.31623 19.4425 7.41373 19.5959 7.55309 19.696C7.64066 19.7589 7.74815 19.7843 7.85406 19.8046C9.35884 20.0925 10.8609 20.0456 12.2845 19.7729C12.5371 19.6923 12.7055 19.4907 12.7055 19.2891V18.7346C12.7055 17.8836 13.2568 17.1454 14.0002 16.7312C14.0496 16.7037 14.0988 16.6757 14.1476 16.6472C14.8377 16.2446 15.6883 16.1461 16.393 16.5227L17.0422 16.8698C17.2527 16.9907 17.5053 16.9504 17.6738 16.7891C18.7264 15.7005 19.4842 14.4102 19.9895 12.9586C20.0316 12.757 19.9474 12.515 19.7369 12.3941ZM10.0109 13.2005C8.1162 13.2005 6.64257 11.7893 6.64257 9.97478C6.64257 8.20063 8.1162 6.74905 10.0109 6.74905C11.8634 6.74905 13.3792 8.20063 13.3792 9.97478C13.3792 11.7893 11.8634 13.2005 10.0109 13.2005Z" fill="#2A7BE4"></path>
+                                                </svg>
+                                            </span>
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="px-0 notification-indicator notification-indicator-warning notification-indicator-fill nav-link" href="/e-commerce/shopping-cart">
+                                        <span class="notification-indicator-number">9</span>
+                                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="shopping-cart" class="svg-inline--fa fa-shopping-cart fa-w-18 fs-4" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" style="transform-origin: 0.5625em 0.5em;">
+                                            <g transform="translate(288 256)">
+                                                <g transform="translate(0, 0)  scale(0.5625, 0.5625)  rotate(0 0 0)">
+                                                    <path fill="currentColor" d="M528.12 301.319l47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681z" transform="translate(-288 -256)"></path>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="dropdown nav-item">
+                                    <a aria-haspopup="true" href="#" class="px-0 notification-indicator notification-indicator-primary nav-link" aria-expanded="false">
+                                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bell" class="svg-inline--fa fa-bell fa-w-14 fs-4" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" style="transform-origin: 0.4375em 0.5em;">
+                                            <g transform="translate(224 256)">
+                                                <g transform="translate(0, 0)  scale(0.625, 0.625)  rotate(0 0 0)">
+                                                    <path fill="currentColor" d="M224 512c35.32 0 63.97-28.65 63.97-64H160.03c0 35.35 28.65 64 63.97 64zm215.39-149.71c-19.32-20.76-55.47-51.99-55.47-154.29 0-77.7-54.48-139.9-127.94-155.16V32c0-17.67-14.32-32-31.98-32s-31.98 14.33-31.98 32v20.84C118.56 68.1 64.08 130.3 64.08 208c0 102.3-36.15 133.53-55.47 154.29-6 6.45-8.66 14.16-8.61 21.71.11 16.4 12.98 32 32.1 32h383.8c19.12 0 32-15.6 32.1-32 .05-7.55-2.61-15.27-8.61-21.71z" transform="translate(-224 -256)"></path>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                    <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu-card dropdown-menu dropdown-menu-right">
+                                        <div class="card-notification shadow-none card" style="max-width: 20rem;">
+                                            <div class="card-header card-header">
+                                                <div class="align-items-center row">
+                                                    <div class="col">
+                                                        <h6 class="mb-0">Notifications</h6>
+                                                    </div>
+                                                    <div class="text-right col-auto">
+                                                        <a class="card-link font-weight-normal" href="/dashboard-alt#!">Mark all as read</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <ul class="font-weight-normal fs--1 list-group list-group-flush">
+                                                <div class="list-group-title">NEW</div>
+                                                <li class="list-group-item">
+                                                    <a class="notification bg-200 notification-flush rounded-0 border-x-0 border-300 border-bottom-0" href="/dashboard-alt#!">
+                                                        <div class="notification-avatar">
+                                                            <div class="avatar avatar-2xl mr-3">
+                                                                <img class="rounded-circle " src="/static/media/1.38f0341f.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="notification-body">
+                                                            <p class="mb-1"><strong>Emma Watson</strong> replied to your comment : "Hello world 😍"</p>
+                                                            <span class="notification-time">
+                                                                <span class="mr-1" role="img" aria-label="Emoji">💬</span>
+                                                                Just Now
+                                                            </span>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <a class="notification bg-200 notification-flush rounded-0 border-x-0 border-300 border-bottom-0" href="/dashboard-alt#!">
+                                                        <div class="notification-avatar">
+                                                             <div class="avatar avatar-2xl mr-3">
+                                                                <div class="avatar-name rounded-circle ">
+                                                                    <span>AB</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="notification-body">
+                                                            <p class="mb-1"><strong>Albert Brooks</strong> reacted to <strong>Mia Khalifa's</strong> status</p>
+                                                            <span class="notification-time">
+                                                                <span class="mr-1" role="img" aria-label="Emoji">❤️</span>9hr
+                                                            </span>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <div class="list-group-title">EARLIER</div>
+                                                <li class="list-group-item">
+                                                    <a class="notification notification-flush rounded-0 border-x-0 border-300 border-bottom-0" href="/dashboard-alt#!">
+                                                        <div class="notification-avatar">
+                                                            <div class="avatar avatar-2xl mr-3"><img class="rounded-circle " src="/static/media/weather.6da58429.jpg" alt=""></div>
+                                                        </div>
+                                                        <div class="notification-body">
+                                                            <p class="mb-1">The forecast today shows a low of 20℃ in California. See today's weather.</p>
+                                                            <span class="notification-time">
+                                                                <span class="mr-1" role="img" aria-label="Emoji">🌤️</span>9hr
+                                                            </span>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            <div class="card-footer text-center border-top">
+                                                <a class="card-link d-block" href="/pages/notifications">View all</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="dropdown nav-item">
+                                    <a aria-haspopup="true" href="#" class="pr-0 nav-link" aria-expanded="false">
+                                        <div class="avatar avatar-xl ">
+                                            <img class="rounded-circle " src="/static/media/3.cb95ae1b.jpg" alt="">
+                                        </div>
+                                    </a>
+                                    <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu-card dropdown-menu dropdown-menu-right">
+                                        <div class="bg-white rounded-soft py-2">
+                                            <a href="#!" tabindex="0" role="menuitem" class="font-weight-bold text-warning dropdown-item">
+                                                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="crown" class="svg-inline--fa fa-crown fa-w-20 mr-1" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                                                    <path fill="currentColor" d="M528 448H112c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h416c8.8 0 16-7.2 16-16v-32c0-8.8-7.2-16-16-16zm64-320c-26.5 0-48 21.5-48 48 0 7.1 1.6 13.7 4.4 19.8L476 239.2c-15.4 9.2-35.3 4-44.2-11.6L350.3 85C361 76.2 368 63 368 48c0-26.5-21.5-48-48-48s-48 21.5-48 48c0 15 7 28.2 17.7 37l-81.5 142.6c-8.9 15.6-28.9 20.8-44.2 11.6l-72.3-43.4c2.7-6 4.4-12.7 4.4-19.8 0-26.5-21.5-48-48-48S0 149.5 0 176s21.5 48 48 48c2.6 0 5.2-.4 7.7-.8L128 416h384l72.3-192.8c2.5.4 5.1.8 7.7.8 26.5 0 48-21.5 48-48s-21.5-48-48-48z"></path>
+                                                </svg>
+                                                <span>Go Pro</span>
+                                            </a>
+                                            <div tabindex="-1" class="dropdown-divider"></div>
+                                            <a href="#!" tabindex="0" role="menuitem" class="dropdown-item">Set status</a>
+                                            <a tabindex="0" role="menuitem" class="dropdown-item" href="/pages/profile">Profile &amp; account</a>
+                                            <a href="#!" tabindex="0" role="menuitem" class="dropdown-item">Feedback</a>
+                                            <div tabindex="-1" class="dropdown-divider"></div>
+                                            <a tabindex="0" role="menuitem" class="dropdown-item" href="/pages/settings">Settings</a>
+                                            <a tabindex="0" role="menuitem" class="dropdown-item" href="/authentication/basic/logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </li>
+            </ul>
+        </nav>
             <!--Ali's Cards-->
         <div class="ali-cards">
             <div class="ali-card-1 card-title cc">
